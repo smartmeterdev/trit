@@ -1,0 +1,8 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.asc
+.subckt TOR a b vcc vee out
+XU1 a b vcc vee P001 TNOR
+XU2 P001 vcc vee Out TNOT
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOR.sub
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOT.sub
+.backanno
+.ends

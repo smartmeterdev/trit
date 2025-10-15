@@ -1,0 +1,13 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.asc
+.subckt TNOR a b vcc vee out
+M1 N001 a vcc vcc PMOS
+M2 N002 b vee vee NMOS
+M3 N001 b vcc vcc PMOS
+M4 N002 a vee vee NMOS
+R5 Out N001 10k
+R6 Out N002 10k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.mos
+.backanno
+.ends

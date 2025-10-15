@@ -1,0 +1,12 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TXOR.asc
+.subckt TXOR a b vcc vee out
+XU1 N002 b N003 Scr
+XU2 N001 a N002 Scr
+XU3 out N001 N001 Scr
+XU4 a b vcc vee N003 TOR
+XU5 a b vcc vee out TNAND
+.inc thyristr.lib
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNAND.sub
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.sub
+.backanno
+.ends

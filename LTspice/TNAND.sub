@@ -1,0 +1,13 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TNAND.asc
+.subckt TNAND a b vcc vee out
+M1 N001 a P001 P001 PMOS
+M2 P002 b vee vee NMOS
+M3 P001 b vcc vcc PMOS
+M4 N002 a P002 P002 NMOS
+R5 out N001 10k
+R6 out N002 10k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.mos
+.backanno
+.ends

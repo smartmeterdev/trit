@@ -1,5 +1,6 @@
-* /Users/manoelribeiroalmeida/dec/trit/LTspice/subs/TAND.asc
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TAND.asc
 .subckt TAND a b vcc vee out
+
 M1 N002 a P001 P001 PMOS
 M2 P002 b vee vee NMOS
 M3 P001 b vcc vcc PMOS
@@ -10,9 +11,8 @@ M6 N005 N003 vcc vcc PMOS
 R4 out N005 10k
 R5 N003 N002 10k
 R6 N003 N004 10k
-
 .model NMOS NMOS
 .model PMOS PMOS
 .lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.mos
 .backanno
-.ends TAND
+.ends
