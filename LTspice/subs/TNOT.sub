@@ -1,0 +1,11 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/subs/TNOT.asc
+.subckt TNOT in vcc vee out
+M1 N001 in vee vee NMOS
+R1 out N001 10k
+M2 N002 in vcc vcc PMOS
+R2 out N002 10k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.mos
+.backanno
+.ends TNOT

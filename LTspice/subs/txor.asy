@@ -1,42 +1,34 @@
 Version 4
 SymbolType CELL
-LINE Normal -36 96 -28 96
-LINE Normal -36 32 -28 32
-LINE Normal 12 48 16 48
-LINE Normal -48 80 -40 80
-LINE Normal -48 64 -36 64
-LINE Normal -48 48 -40 48
-CIRCLE Normal 32 88 16 72
-ARC Normal -148 8 -36 120 -48 96 -48 32
-ARC Normal -136 8 -24 120 -36 96 -36 32
-ARC Normal -80 -12 28 96 -28 96 24 64
-ARC Normal -80 32 28 140 24 64 -28 32
-WINDOW 0 16 24 Left 2
-WINDOW 3 16 112 Left 2
-SYMATTR Prefix A
-SYMATTR SpiceModel XOR
-SYMATTR Description Behavioral XOR gate
-PIN -48 32 NONE 0
-PINATTR PinName a
+LINE Normal -16 32 4 32
+LINE Normal 36 0 48 0
+LINE Normal -16 -32 4 -32
+LINE Normal 0 -32 0 -48
+LINE Normal 0 32 0 48
+LINE Normal -32 -16 -8 -16
+LINE Normal -32 16 -8 16
+CIRCLE Normal 28 8 12 -8
+ARC Normal -28 32 36 -32 4 32 4 -32
+ARC Normal -48 32 4 -32 -16 32 -16 -32
+ARC Normal -56 32 -4 -32 -24 32 -24 -32
+TEXT 8 -24 Center 2 +
+TEXT 8 24 Center 2 -
+WINDOW 0 36 -24 Left 2
+SYMATTR Prefix TX
+SYMATTR SpiceModel TXOR
+SYMATTR Description Ternary Balanced TXOR gate
+PIN 48 0 NONE 0
+PINATTR PinName out
 PINATTR SpiceOrder 1
-PIN -48 48 NONE 0
-PINATTR PinName b
+PIN 0 -48 NONE 5
+PINATTR PinName vcc
 PINATTR SpiceOrder 2
-PIN -48 64 NONE 0
-PINATTR PinName c
+PIN 0 48 NONE 5
+PINATTR PinName vee
 PINATTR SpiceOrder 3
-PIN -48 80 NONE 0
-PINATTR PinName d
+PIN -32 -16 NONE 0
+PINATTR PinName a
 PINATTR SpiceOrder 4
-PIN -48 96 NONE 0
-PINATTR PinName e
+PIN -32 16 NONE 0
+PINATTR PinName b
 PINATTR SpiceOrder 5
-PIN 32 80 NONE 0
-PINATTR PinName _Q
-PINATTR SpiceOrder 6
-PIN 16 48 NONE 0
-PINATTR PinName Q
-PINATTR SpiceOrder 7
-PIN -16 96 NONE 0
-PINATTR PinName com
-PINATTR SpiceOrder 8
