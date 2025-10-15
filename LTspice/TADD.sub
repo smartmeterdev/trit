@@ -1,0 +1,15 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TADD.asc
+.subckt TADD a b vcc vee cin cout s
+XU5 a b vcc vee N001 TXOR
+XU6 N001 cin vcc vee s TXOR
+XU1 a b vcc vee N003 TAND
+XU2 N001 cin vcc vee N002 TAND
+XU3 N002 N003 vcc vee cout TXOR
+* s1
+* s3
+* s2
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TAND.sub
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.sub
+.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TXOR.sub
+.backanno
+.ends

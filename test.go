@@ -51,26 +51,22 @@ func TV() {
 	}
 
 	fmt.Println("*********TOR*********")
-	fmt.Println("a\tb\tTOR(a,b)")
+	fmt.Println("a\tb\ttor(a,b)")
 	for a = -1; a <= 1; a++ {
 		for b = -1; b <= 1; b++ {
-			fmt.Println(a, ",", b, ",", TOR(a, b))
+			fmt.Println(a, "\t", b, "\t", TOR(a, b))
 		}
 	}
 
 	fmt.Println("*********TXOR*********")
-	fmt.Println("a,b,S,Ref")
+	fmt.Println("a\tb\ttxor(a,b)")
 	for a = -1; a <= 1; a++ {
 		for b = -1; b <= 1; b++ {
-			msg := ""
-			if TXOR(a, b) != TXOR_(a, b) {
-				msg = "err"
-			}
-			fmt.Println(a, ",", b, ",", TXOR(a, b), ",", TXOR_(a, b), msg)
+			fmt.Println(a, "\t", b, "\t", TXOR(a, b))
 		}
 	}
 
-	fmt.Println("*********TADD2*********")
+	fmt.Println("*********TADD*********")
 	fmt.Println("a,b,Cin,S,Cout")
 	i := 0
 	for a = -1; a <= 1; a++ {
@@ -115,8 +111,8 @@ func testMaxInt() {
 func main() {
 
 	//testMaxInt()
-	//TV()
-	testSoma()
+	TV()
+	//testSoma()
 
 	//fmt.Println(TADD2(-1, -1, 1))
 }

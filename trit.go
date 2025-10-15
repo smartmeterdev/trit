@@ -70,7 +70,6 @@ func TADD(a, b, cin Trit) (s Trit, cout Trit) { // 44 CMOS - BINÁRIO 42
 	s2 := TAND(s1, cin)
 	s3 := TAND(a, b)
 	cout = TXOR(s2, s3)
-	//fmt.Println(s2, s3, cout)
 	return
 }
 
