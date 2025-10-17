@@ -1,4 +1,4 @@
-package main
+package BT
 
 import "log"
 
@@ -32,7 +32,7 @@ func (t *Tint) Set(n int64) {
 	}
 }
 
-func (t *Tint) toString() (result string) {
+func (t *Tint) Str() (result string) {
 	result = ""
 	left := false
 	for i := 0; i < len(t); i++ {
@@ -40,7 +40,7 @@ func (t *Tint) toString() (result string) {
 			left = true
 		}
 		if left {
-			result = result + t[i].toString()
+			result = result + t[i].Str()
 		}
 	}
 	return

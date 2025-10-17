@@ -1,6 +1,5 @@
 Version 4
 SymbolType BLOCK
-LINE Normal -32 32 -12 32
 LINE Normal -32 32 -32 -32
 LINE Normal -32 -32 -12 -32
 LINE Normal -16 -44 -16 -32
@@ -8,6 +7,10 @@ LINE Normal -16 32 -16 44
 LINE Normal -44 -16 -32 -16
 LINE Normal -44 16 -32 16
 LINE Normal 36 0 44 0
+LINE Normal -28 24 -20 40
+LINE Normal -36 40 -28 24
+LINE Normal -36 40 -20 40
+LINE Normal -12 32 -24 32
 CIRCLE Normal 0 8 -16 -8
 CIRCLE Normal 36 8 20 -8
 ARC Normal -44 32 20 -32 -12 32 -12 -32

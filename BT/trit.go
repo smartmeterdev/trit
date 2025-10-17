@@ -1,4 +1,4 @@
-package main
+package BT
 
 // Balanced Ternary Representation
 // Trit type to represent a single trit (-1, 0, 1)
@@ -57,13 +57,6 @@ func TXOR(a, b Trit) Trit { /// 10 CMOS 3 TRIAC - BINÁRIO 12
 	return 0
 }
 
-func TABS(a Trit) Trit { //2 CMOS
-	if a == 1 || a == -1 {
-		return 1
-	}
-	return 0
-}
-
 func TADD(a, b, cin Trit) (s Trit, cout Trit) { // 44 CMOS - BINÁRIO 42
 	s1 := TXOR(a, b)
 	s = TXOR(s1, cin)
@@ -73,7 +66,7 @@ func TADD(a, b, cin Trit) (s Trit, cout Trit) { // 44 CMOS - BINÁRIO 42
 	return
 }
 
-func (t *Trit) toString() string {
+func (t *Trit) Str() string {
 	switch *t {
 	case -1:
 		return "-"
