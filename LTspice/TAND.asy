@@ -1,14 +1,17 @@
 Version 4
 SymbolType BLOCK
-LINE Normal -32 32 -12 32
 LINE Normal -32 32 -32 -32
 LINE Normal 20 0 32 0
 LINE Normal -32 -32 -12 -32
-LINE Normal -16 -44 -16 -32
-LINE Normal -16 32 -16 44
-LINE Normal -44 -16 -32 -16
-LINE Normal -44 16 -32 16
-CIRCLE Normal 0 8 -16 -8
+LINE Normal -48 16 -32 16
+LINE Normal -28 24 -20 40
+LINE Normal -36 40 -28 24
+LINE Normal -36 40 -20 40
+LINE Normal -12 32 -24 32
+LINE Normal -48 -16 -32 -16
+LINE Normal -48 0 -32 0
+LINE Normal -16 -48 -16 -32
+LINE Normal -16 48 -16 32
 ARC Normal -44 32 20 -32 -12 32 -12 -32
 TEXT -16 -24 Center 2 +
 TEXT -16 24 Center 2 -
@@ -21,7 +24,7 @@ SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TAND.sub
 PIN -48 -16 NONE 8
 PINATTR PinName a
 PINATTR SpiceOrder 1
-PIN -48 16 NONE 8
+PIN -48 0 NONE 8
 PINATTR PinName b
 PINATTR SpiceOrder 2
 PIN -16 -48 NONE 8
@@ -33,3 +36,6 @@ PINATTR SpiceOrder 4
 PIN 32 0 NONE 8
 PINATTR PinName out
 PINATTR SpiceOrder 5
+PIN -48 16 NONE 8
+PINATTR PinName gnd
+PINATTR SpiceOrder 6
