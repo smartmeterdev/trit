@@ -1,8 +1,22 @@
 * /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.asc
-.subckt TOR a b vcc vee out
-XU1 a b vcc vee P001 TNOR
-XU2 P001 vcc vee Out TNOT
-.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOR.sub
-.lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOT.sub
+.subckt TOR a b vcc vee out gnd
+R2 vcc N001 10k
+R4 N002 N001 50K
+Q2 out N002 vcc 0 PNP
+R5 N003 a 10k
+R7 N003 0 100k
+R1 N004 b 10k
+R3 N004 0 100k
+Q3 N001 N004 0 0 NPN
+R8 N005 N006 100k
+R9 N006 vee 10k
+Q4 N006 N004 0 0 PNP
+Q5 out N005 vee 0 NPN
+R6 out 0 100k
+Q7 N001 N003 0 0 NPN
+Q1 N006 N003 0 0 PNP
+.model NPN NPN
+.model PNP PNP
+.lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.bjt
 .backanno
 .ends

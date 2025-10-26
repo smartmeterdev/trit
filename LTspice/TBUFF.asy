@@ -8,15 +8,14 @@ LINE Normal -40 36 -24 36
 LINE Normal -28 28 28 0
 LINE Normal -16 48 -16 24
 LINE Normal -16 -48 -16 -20
-LINE Normal 64 0 44 0
+LINE Normal 48 0 28 0
 LINE Normal -64 -16 -36 -16
 LINE Normal -64 16 -36 16
-CIRCLE Normal 44 8 28 -8
 TEXT -16 -16 Center 2 +
 TEXT -16 12 Center 2 -
 WINDOW 0 28 -28 Bottom 2
 WINDOW 3 32 24 Top 2
-SYMATTR Value TNOT
+SYMATTR Value TBUFF
 SYMATTR Prefix X
 SYMATTR Description Ternary Balanced TNOT gate
 SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOT.sub
@@ -29,7 +28,7 @@ PINATTR SpiceOrder 2
 PIN -16 48 NONE 8
 PINATTR PinName vee
 PINATTR SpiceOrder 3
-PIN 64 0 NONE 8
+PIN 48 0 NONE 8
 PINATTR PinName out
 PINATTR SpiceOrder 4
 PIN -64 16 NONE 8

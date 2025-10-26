@@ -1,0 +1,18 @@
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/TBUFF.asc
+.subckt TBUFF in vcc vee out gnd
+R2 vcc N005 10k
+Q1 N005 N001 0 0 NPN
+R4 N004 N005 100k
+R6 out 0 100k
+Q2 out N004 vcc 0 PNP
+R5 N001 in 10k
+R7 N001 0 100k
+R9 N002 N003 100k
+R11 N003 vee 10k
+Q5 N003 N001 0 0 PNP
+Q6 out N002 vee 0 NPN
+.model NPN NPN
+.model PNP PNP
+.lib /Users/manoelribeiroalmeida/Library/Application Support/LTspice/lib/cmp/standard.bjt
+.backanno
+.ends
