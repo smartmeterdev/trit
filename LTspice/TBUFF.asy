@@ -17,8 +17,8 @@ WINDOW 0 28 -28 Bottom 2
 WINDOW 3 32 24 Top 2
 SYMATTR Value TBUFF
 SYMATTR Prefix X
-SYMATTR Description Ternary Balanced TNOT gate
-SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOT.sub
+SYMATTR Description Ternary Balanced TBUFF gate
+SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TBUFF.sub
 PIN -64 -16 NONE 8
 PINATTR PinName in
 PINATTR SpiceOrder 1
@@ -33,4 +33,4 @@ PINATTR PinName out
 PINATTR SpiceOrder 4
 PIN -64 16 NONE 8
 PINATTR PinName gnd
-PINATTR SpiceOrder 6
+PINATTR SpiceOrder 5

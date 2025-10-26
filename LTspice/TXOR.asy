@@ -17,8 +17,8 @@ WINDOW 0 20 -36 Bottom 2
 WINDOW 3 32 28 Top 2
 SYMATTR Value TXOR
 SYMATTR Prefix X
-SYMATTR Description Ternary Balanced TOR gate
-SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TOR.sub
+SYMATTR Description Ternary Balanced TXOR gate
+SYMATTR ModelFile /Users/manoelribeiroalmeida/dev/trit/LTspice/TXOR.sub
 PIN -48 -16 NONE 8
 PINATTR PinName a
 PINATTR SpiceOrder 1
