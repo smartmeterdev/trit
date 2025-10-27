@@ -80,6 +80,7 @@ func TV() {
 				if int(cout) != tvsum[i][4] {
 					fmt.Println(a, ",", b, ",", c, ",", s, ",", cout, "=>", tvsum[i][4])
 				}
+				fmt.Println(a, ",", b, ",", c, ",", s, ",", cout)
 				i += 1
 			}
 		}

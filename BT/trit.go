@@ -25,7 +25,7 @@ func TOR(a, b Trit) Trit { // 6 CMOS - BINÁRIO 6
 	return TNOT(TNOR(a, b))
 }
 
-func TNAND(a, b Trit) Trit { // 4 CMOS - BINÁRIO 6
+func TNAND(a, b Trit) Trit { // 6 TRAN - BINÁRIO 6
 	if a == 1 && b == 1 {
 		return -1
 	} else if a == -1 && b == -1 {
@@ -34,8 +34,13 @@ func TNAND(a, b Trit) Trit { // 4 CMOS - BINÁRIO 6
 	return 0
 }
 
-func TAND(a, b Trit) Trit { // 6 CMOS - BINÁRIO 6
-	return TNOT(TNAND(a, b))
+func TAND(a, b Trit) Trit { // 6 TRAN - BINÁRIO 6
+	if a == 1 && b == 1 {
+		return 1
+	} else if a == -1 && b == -1 {
+		return -1
+	}
+	return 0
 }
 
 func TXOR_(a, b Trit) Trit { //simulado

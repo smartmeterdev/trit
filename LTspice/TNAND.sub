@@ -1,7 +1,7 @@
 * /Users/manoelribeiroalmeida/dev/trit/LTspice/TNAND.asc
 .subckt TNAND a b vcc vee out gnd
-XU1 a b vcc vee P001 0 TAND
-XU2 P001 vcc vee out TNOT
+XU3 a b vcc vee N001 0 TAND
+XU4 N001 vcc vee out 0 TNOT
 .lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TAND.sub
 .lib /Users/manoelribeiroalmeida/dev/trit/LTspice/TNOT.sub
 .backanno
