@@ -1,5 +1,5 @@
-* /Users/manoelribeiroalmeida/dev/trit/LTspice/TADD.asc
-.subckt TADD a b vcc vee cin cout s gnd
+* /Users/manoelribeiroalmeida/dev/trit/LTspice/BFTA.asc
+.subckt BFTA a b vcc vee cin cout s gnd
 XU5 a b vcc vee N001 0 TXOR
 XU6 N001 cin vcc vee s 0 TXOR
 XU1 a b vcc vee N003 0 TAND
