@@ -8,11 +8,20 @@ const AnalogSlice float64 = 0.078 //FOR -5V .. 5V INPUT
 const base3 = 3
 
 // Logical ports
-func TNOT(a Trit) Trit { //2 CMOS
+func TNOT(a Trit) Trit { //2 TRANS
 	return -a
 }
 
-func TNOR(a, b Trit) Trit { //4 CMOS - BINÁRIO 6
+func TOR(a, b Trit) Trit { //6 TRANS - BINÁRIO 6
+	if a == 1 || b == 1 {
+		return 1
+	} else if a == -1 || b == -1 {
+		return -1
+	}
+	return 0
+}
+
+func TNOR(a, b Trit) Trit { // 6 TRAN - BINÁRIO 4
 	if a == 1 || b == 1 {
 		return -1
 	} else if a == -1 || b == -1 {
@@ -21,11 +30,7 @@ func TNOR(a, b Trit) Trit { //4 CMOS - BINÁRIO 6
 	return 0
 }
 
-func TOR(a, b Trit) Trit { // 6 CMOS - BINÁRIO 6
-	return TNOT(TNOR(a, b))
-}
-
-func TNAND(a, b Trit) Trit { // 6 TRAN - BINÁRIO 6
+func TNAND(a, b Trit) Trit { // 6 TRAN - BINÁRIO 4
 	if a == 1 && b == 1 {
 		return -1
 	} else if a == -1 && b == -1 {
@@ -51,7 +56,7 @@ func TXOR_(a, b Trit) Trit { //simulado
 	return base3
 }
 
-func TXOR(a, b Trit) Trit { /// 10 CMOS 3 TRIAC - BINÁRIO 12
+func TXOR(a, b Trit) Trit { /// 20 TRANS - BINÁRIO 12
 	s1 := TNAND(a, b)
 	if a != 0 && b != 0 {
 		return s1
